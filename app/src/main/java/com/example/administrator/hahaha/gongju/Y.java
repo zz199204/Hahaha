@@ -4,6 +4,8 @@ import android.content.Context;
 import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
+import com.example.administrator.hahaha.bean.UserBean;
+import com.hss01248.dialog.StyledDialog;
 import com.orhanobut.logger.Logger;
 
 import org.xutils.common.Callback;
@@ -15,12 +17,12 @@ import org.xutils.x;
  * Created by zykj on 2017/4/8.
  */
 
-public  class Y {
+public  class  Y {
     public static Context context; //全局上下文
 
     public  static  boolean isLog=true; //控制日志打印的开关
 
-
+     public  static UserBean U;
 
 
 
@@ -72,6 +74,7 @@ public  class Y {
      * @return
      */
     public static Callback.Cancelable get(RequestParams params, MyCommonCall<String> call){
+        StyledDialog.buildLoading().show();
         return   x.http().get(params, call);
     }
     /**
@@ -81,6 +84,7 @@ public  class Y {
      * @return
      */
     public static Callback.Cancelable post(RequestParams params, MyCommonCall<String> call){
+        StyledDialog.buildLoading().show();
         return   x.http().post(params, call);
     }
     /**
@@ -88,7 +92,9 @@ public  class Y {
      */
     public abstract  static class  MyCommonCall<String> implements Callback.CommonCallback<String>{
         @Override
-        public void onFinished() {}
+        public void onFinished() {
+            StyledDialog.dismissLoading();
+        }
 
         @Override
         public void onCancelled(CancelledException cex) {}
@@ -96,6 +102,7 @@ public  class Y {
         @Override
         public void onError(Throwable ex, boolean isOnCallback) {
             t("服务器异常");
+            StyledDialog.dismissLoading();
             ex.printStackTrace();
         }
     }

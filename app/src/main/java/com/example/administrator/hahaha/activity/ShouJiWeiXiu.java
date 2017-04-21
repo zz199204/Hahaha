@@ -15,6 +15,7 @@ import com.bigkoo.pickerview.OptionsPickerView;
 import com.example.administrator.hahaha.R;
 import com.example.administrator.hahaha.bean.MobileBean;
 import com.example.administrator.hahaha.gongju.Y;
+import com.hss01248.dialog.StyledDialog;
 
 
 import org.xutils.common.Callback;
@@ -65,7 +66,7 @@ public class ShouJiWeiXiu extends Activity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.home_sjwx_fanhui:
-                Intent intent1 = new Intent(ShouJiWeiXiu.this,Mainactivity.class);
+                Intent intent1 = new Intent(ShouJiWeiXiu.this, Mainactivity.class);
                 startActivity(intent1);
                 break;
             case R.id.home_sjwx_btpinpai:
@@ -74,7 +75,8 @@ public class ShouJiWeiXiu extends Activity {
                 Y.get(params, new Y.MyCommonCall<String>() {
                     @Override
                     public void onSuccess(String result) {
-                        if ((Y.getRespCode(result))){
+                        StyledDialog.dismissLoading();
+                        if ((Y.getRespCode(result))) {
                             list = JSON.parseArray(Y.getData(result), MobileBean.class);
                             OptionsPickerView pickerView = new OptionsPickerView.Builder(ShouJiWeiXiu.this, new OptionsPickerView.OnOptionsSelectListener() {
                                 @Override
@@ -90,57 +92,11 @@ public class ShouJiWeiXiu extends Activity {
                             }
                             pickerView.setPicker(strs, null, null);
                             pickerView.show();
-                        }else{
+                        } else {
                             Y.t("解析失败");
-
                         }
                     }
                 });
-//                x.http().get(params, new Callback.CommonCallback<String>() {
-//                    @Override
-//                    public void onSuccess(String result) {
-//                        if ("0".equals(JSON.parseObject(result).getString("resp_code"))) {
-//                            Log.i(TAG, "onSuccess: -------------成功-----");
-//                            //成功进行操作
-//                            String data = JSON.parseObject(result).getString("data").toString();
-//                            Log.i(TAG, "onSuccess: -------------成功-----" + data);
-//                            list = JSON.parseArray(JSON.parseObject(result).getString("data"), MobileBean.class);
-//                            OptionsPickerView pickerView = new OptionsPickerView.Builder(ShouJiWeiXiu.this, new OptionsPickerView.OnOptionsSelectListener() {
-//                                @Override
-//                                public void onOptionsSelect(int options1, int options2, int options3, View v) {
-//                                    homeSjwxPinpai.setText(list.get(options1).getName());
-//                                    aa = options1;//当前选择的索引
-//                                }
-//                            }).build();
-//                            //把lists 进行转换
-//                            List<String> strs = new ArrayList<String>();
-//                            for (MobileBean mb : list) {
-//                                strs.add(mb.getName());
-//                            }
-//                            pickerView.setPicker(strs, null, null);
-//                            pickerView.show();
-//                        } else {
-//                            //失败
-//                            Log.i(TAG, "onSuccess: -------------失败-----");
-//                        }
-//                    }
-//
-//                    @Override
-//                    public void onError(Throwable ex, boolean isOnCallback) {
-//
-//                    }
-//
-//                    @Override
-//                    public void onCancelled(CancelledException cex) {
-//
-//                    }
-//
-//                    @Override
-//                    public void onFinished() {
-//
-//                    }
-//                });
-
                 break;
             case R.id.home_sjwx_btxinghao:
                 if (aa == -1) {
@@ -151,6 +107,7 @@ public class ShouJiWeiXiu extends Activity {
                     x.http().get(params1, new Callback.CommonCallback<String>() {
                         @Override
                         public void onSuccess(String result) {
+                            StyledDialog.dismissLoading();
                             if ("0".equals(JSON.parseObject(result).getString("resp_code"))) {
                                 Log.i(TAG, "onSuccess: -------------成功-----");
                                 //成功进行操作
@@ -195,11 +152,12 @@ public class ShouJiWeiXiu extends Activity {
 
                 break;
             case R.id.home_sjwx_btguzhang:
-
+                StyledDialog.buildLoading().show();
                 RequestParams params1 = new RequestParams("http://221.207.184.124:7071/yxg/findPhoneFault");
                 x.http().get(params1, new Callback.CommonCallback<String>() {
                     @Override
                     public void onSuccess(String result) {
+                        StyledDialog.dismissLoading();
                         if ("0".equals(JSON.parseObject(result).getString("resp_code"))) {
                             Log.i(TAG, "onSuccess: -------------成功-----");
                             //成功进行操作

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.hahaha">
-
+    <!--添加网络权限-->
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <!--内存读写权限-->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
 
@@ -13,18 +14,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.Mainactivity">
+        <activity android:name=".activity.DengLu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--跳转页面添加权限-->
         <activity android:name=".activity.ShouJiWeiXiu"></activity>
         <activity android:name=".activity.DianNaoWeiXiu"></activity>
         <activity android:name=".activity.JiaDianWeiXiu"></activity>
         <activity android:name=".activity.DiZhiGuanLi"></activity>
         <activity android:name=".activity.BianJiDiZhi"></activity>
+        <activity android:name=".activity.Mainactivity"></activity>
+        <activity android:name=".activity.ZhuCe"></activity>
+        <activity android:name=".activity.MiMa"></activity>
+        <activity android:name=".activity.WangJiMiMa"></activity>
         <activity android:name=".activity.GengHuanShouJiHao"></activity>
         <activity android:name=".activity.HuJiaoFuWu"></activity>
     </application>

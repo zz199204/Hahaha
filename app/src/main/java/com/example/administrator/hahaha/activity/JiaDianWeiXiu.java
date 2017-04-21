@@ -13,6 +13,7 @@ import com.bigkoo.pickerview.OptionsPickerView;
 import com.example.administrator.hahaha.R;
 import com.example.administrator.hahaha.bean.MobileBean;
 import com.example.administrator.hahaha.gongju.Y;
+import com.hss01248.dialog.StyledDialog;
 
 import org.xutils.http.RequestParams;
 
@@ -72,6 +73,7 @@ public class JiaDianWeiXiu extends Activity {
                 Y.get(params, new Y.MyCommonCall<String>() {
                     @Override
                     public void onSuccess(String result) {
+                        StyledDialog.dismissLoading();
                         if ((Y.getRespCode(result))) {
                             list = JSON.parseArray(Y.getData(result), MobileBean.class);
                             OptionsPickerView pickerView = new OptionsPickerView.Builder(JiaDianWeiXiu.this, new OptionsPickerView.OnOptionsSelectListener() {
@@ -101,6 +103,7 @@ public class JiaDianWeiXiu extends Activity {
                 Y.get(params1, new Y.MyCommonCall<String>() {
                     @Override
                     public void onSuccess(String result) {
+                        StyledDialog.dismissLoading();
                         if ((Y.getRespCode(result))) {
                             list1 = JSON.parseArray(Y.getData(result), MobileBean.class);
                             OptionsPickerView pickerView = new OptionsPickerView.Builder(JiaDianWeiXiu.this, new OptionsPickerView.OnOptionsSelectListener() {
@@ -131,6 +134,7 @@ public class JiaDianWeiXiu extends Activity {
                 Y.get(params2, new Y.MyCommonCall<String>() {
                     @Override
                     public void onSuccess(String result) {
+                        StyledDialog.dismissLoading();
                         if ((Y.getRespCode(result))) {
                             list2 = JSON.parseArray(Y.getData(result), MobileBean.class);
                             OptionsPickerView pickerView = new OptionsPickerView.Builder(JiaDianWeiXiu.this, new OptionsPickerView.OnOptionsSelectListener() {
@@ -160,6 +164,7 @@ public class JiaDianWeiXiu extends Activity {
                 Y.get(params3, new Y.MyCommonCall<String>() {
                     @Override
                     public void onSuccess(String result) {
+                        StyledDialog.dismissLoading();
                         if ((Y.getRespCode(result))) {
                             list3 = JSON.parseArray(Y.getData(result), MobileBean.class);
                             OptionsPickerView pickerView = new OptionsPickerView.Builder(JiaDianWeiXiu.this, new OptionsPickerView.OnOptionsSelectListener() {
