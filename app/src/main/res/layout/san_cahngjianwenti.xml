@@ -12,6 +12,7 @@
         android:background="#ffff">
 
         <ImageView
+            android:layout_marginLeft="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|left"
@@ -90,7 +91,7 @@
             android:layout_margin="10dp"
             android:text="NOKIA的开机后反复白屏重启，或者某个功能进不去等，这一类的故障是软件的问题.国产机MTk系列，不断提示充电器链接，充电器移除时CPU虚焊。
 "
-            android:textSize="20dp" />
+            android:textSize="18dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -102,14 +103,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="维修方法:"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="软件故障就刷机，硬件故障就修硬件，用电源夹上看手机电流"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -126,7 +127,7 @@
             android:layout_margin="10dp"
             android:text="NOKIA的开机后反复白屏重启，或者某个功能进不去等，这一类的故障是软件的问题.国产机MTk系列，不断提示充电器链接，充电器移除时CPU虚焊。
 "
-            android:textSize="20dp" />
+            android:textSize="18dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -138,14 +139,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="维修方法:"
-                android:textSize="20dp" />
+                android:textSize="18dp"
+                android:id="@+id/textView4" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="软件故障就刷机，硬件故障就修硬件，用电源夹上看手机电流"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

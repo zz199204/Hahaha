@@ -12,19 +12,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|left"
+            android:layout_marginLeft="15dp"
             android:src="@mipmap/u312" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="我的订单"
+            android:text="订单详情"
             android:textColor="#00cccc"
             android:textSize="25dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
             android:gravity="center|right"
             android:text="取消订单"
             android:textColor="#00cccc"
@@ -37,11 +39,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></include>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:background="#e8e8e8"></View>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
             android:text="订单跟踪"
             android:textColor="#6b6b6b"
             android:textSize="20dp" />
@@ -60,17 +58,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="15dp"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
                     android:src="@mipmap/u1008" />
 
                 <TextView
@@ -82,39 +82,48 @@
             </LinearLayout>
 
             <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:src="@mipmap/u1016" />
-
-            <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:src="@mipmap/u1016" />
 
             <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:src="@mipmap/u1016" />
 
             <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:src="@mipmap/u1016" />
 
             <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/u1016" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/u1016" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
@@ -126,8 +135,9 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
                     android:src="@mipmap/u1004" />
 
                 <TextView
@@ -140,40 +150,48 @@
             </LinearLayout>
 
             <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/u1016" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:src="@mipmap/u1016" />
 
             <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/u1016" />
+
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:src="@mipmap/u1016" />
 
             <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:src="@mipmap/u1016" />
 
             <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp"
-                android:src="@mipmap/u1016" />
-
-            <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
@@ -185,8 +203,9 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
                     android:src="@mipmap/u1004" />
 
                 <TextView
@@ -202,27 +221,33 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="10dp"
+            android:background="#ffff"></View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
             android:background="#f2f2f2"></View>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="15dp"
                 android:text="种类 :"
                 android:textColor="#949494"
-                android:textSize="23dp" />
+                android:textSize="18dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="手机"
-                android:textSize="23dp" />
+                android:textSize="18dp" />
 
         </LinearLayout>
 
@@ -254,14 +279,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="14dp"
                         android:text="李雪健"
-                        android:textSize="20dp" />
+                        android:textSize="18dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:text="18745766632"
-                        android:textSize="20dp" />
+                        android:textSize="18dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -282,7 +307,7 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="5dp"
                         android:text="下单时间"
-                        android:textSize="20dp" />
+                        android:textSize="18dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -290,7 +315,7 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="5dp"
                         android:text="2016-07-09"
-                        android:textSize="20dp" />
+                        android:textSize="18dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -298,7 +323,7 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="5dp"
                         android:text="13:00"
-                        android:textSize="20dp" />
+                        android:textSize="18dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -320,7 +345,7 @@
                         android:layout_gravity="top"
                         android:layout_marginLeft="5dp"
                         android:text="下单地址"
-                        android:textSize="20dp" />
+                        android:textSize="18dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -330,7 +355,7 @@
                         android:ellipsize="end"
                         android:maxLines="2"
                         android:text="黑龙江哈尔滨银行界2号卓雅科技有限公司"
-                        android:textSize="20dp" />
+                        android:textSize="18dp" />
 
                 </LinearLayout>
 
@@ -339,7 +364,7 @@
 
             <ImageView
                 android:layout_width="100dp"
-                android:layout_height="80dp"
+                android:layout_height="103dp"
                 android:layout_gravity="top"
                 android:layout_marginTop="20dp"
                 android:scaleType="fitXY"
@@ -357,6 +382,11 @@
 
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#e8e8e8"></View>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -366,6 +396,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <TextView
@@ -373,14 +404,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="品牌 :"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="苹果手机"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -393,14 +424,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="型号 :"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="6 plus"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -413,14 +444,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="故障 :"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="屏幕"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -434,6 +465,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:background="#ffff">
 
         <TextView
@@ -441,6 +473,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:text="内外屏都进水了，按键不好使，手机有花屏"
-            android:textSize="16dp" />
+            android:textSize="15dp" />
     </LinearLayout>
 </LinearLayout>

@@ -98,16 +98,22 @@
                     android:layout_gravity="center"
                     android:src="@mipmap/u676" />
 
-                <Button
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/u688"
                     android:layout_gravity="center|top"
                     android:layout_marginBottom="5dp"
                     android:layout_marginLeft="10dp"
-                    android:background="@drawable/shape2"
-                    android:text="5"
-                    android:textColor="#ffff" />
-
+                 />
+                    <TextView
+                        android:text="5"
+                        android:layout_gravity="center|top"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#ffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
 
             </FrameLayout>
 
@@ -167,11 +173,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:background="#f2f2f2"></View>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="30dp"
@@ -212,6 +213,11 @@
             android:layout_marginRight="10dp"
             android:src="@mipmap/u96" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#f2f2f2"></View>
 
     <View
         android:layout_width="match_parent"

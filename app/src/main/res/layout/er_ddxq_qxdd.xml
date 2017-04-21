@@ -12,6 +12,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|left"
+            android:layout_marginLeft="15dp"
             android:src="@mipmap/u312" />
 
         <TextView
@@ -25,6 +26,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
             android:gravity="center|right"
             android:text="取消订单"
             android:textColor="#00cccc"
@@ -227,11 +229,13 @@
                 android:src="@mipmap/u1016" />
 
             <LinearLayout
+                android:layout_marginLeft="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <ImageView
+                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@mipmap/u1004" />
@@ -250,7 +254,7 @@
                 android:layout_height="12dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="5dp"
                 android:src="@mipmap/u1016" />
 
             <ImageView
@@ -318,7 +322,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="15dp"
                 android:text="种类 :"
                 android:textColor="#949494"
                 android:textSize="23dp" />
@@ -445,7 +449,7 @@
 
             <ImageView
                 android:layout_width="100dp"
-                android:layout_height="80dp"
+                android:layout_height="105dp"
                 android:layout_gravity="top"
                 android:layout_marginTop="20dp"
                 android:scaleType="fitXY"
